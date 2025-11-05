@@ -2,11 +2,25 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: Teaching Assistant for graduate courses at Carnegie Mellon University.
 nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+## Current Semester
 
-Organize your courses by years, topics, or universities, however you like!
+### Fall 2025
+- **95-891** Introduction to AI
+- **95-865** Unstructured Data Analytics
+
+---
+
+## Past Semesters
+
+### Spring 2025
+- **95-891** Introduction to AI
+- **95-865** Unstructured Data Analytics
+
+### Fall 2024
+- **95-891** Introduction to AI
+- **95-865** Unstructured Data Analytics

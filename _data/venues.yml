@@ -7,3 +7,19 @@
 
 "Vision":
   color: "#009f36"
+
+"ACL":
+  url: https://www.aclweb.org/anthology/
+  color: "#8B0000"
+
+"AMIA":
+  url: https://www.amia.org/
+  color: "#1d4e89"
+
+"JAMIA":
+  url: https://academic.oup.com/jamia
+  color: "#003366"
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#006400"

@@ -1,0 +1,20 @@
+/* Custom site-wide background for dark theme: top (dark) -> bottom (bright brown) gradient */
+
+html[data-theme="dark"] body,
+html[data-theme-setting="dark"] body {
+  /* dark-to-bright brown gradient that matches home hero mood */
+  background: linear-gradient(180deg, #1f1209 0%, #5a3722 45%, #b98c62 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Slight tweak for light theme (optional): subtle warm tint at top */
+html[data-theme="light"] body,
+html[data-theme-setting="light"] body {
+  background: linear-gradient(180deg, #fffaf7 0%, #fff7f0 100%);
+}
+
+/* Ensure full-bleed sections that use var(--global-bg-color) still look correct */
+body, .navbar, .footer, .container, .post {
+  background-clip: padding-box;
+}

@@ -1,11 +1,13 @@
-// Check if the user is on a Mac and update the shortcut key for search accordingly
+// The previous behavior inserted a visible "⌘ k" hint into the
+// #search-toggle element which we don't want in the navbar UI.
+// Keep the script present (non-destructive) but avoid injecting
+// any text — leave only the icon that the header template already provides.
 document.addEventListener("readystatechange", () => {
   if (document.readyState === "interactive") {
-    let isMac = navigator.platform.toUpperCase().indexOf("MAC") >= 0;
     let shortcutKeyElement = document.querySelector("#search-toggle .nav-link");
-    if (shortcutKeyElement && isMac) {
-      // use the unicode for command key
-      shortcutKeyElement.innerHTML = '&#x2318; k <i class="ti ti-search"></i>';
+    if (shortcutKeyElement) {
+      // Ensure the element contains only the search icon markup.
+      shortcutKeyElement.innerHTML = '<i class="ti ti-search"></i>';
     }
   }
 });

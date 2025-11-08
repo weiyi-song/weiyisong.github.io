@@ -39,8 +39,10 @@ latest_posts:
     margin-right: 1.25rem;
     margin-top: 0.6rem;
     margin-bottom: 0.9rem;
-    width: 220px;
-    max-width: 30%;
+    /* match the profile container width (profile uses 30% at >=576px) */
+    width: 30%;
+    /* allow a reasonable cap on very narrow viewports */
+    max-width: 40%;
     z-index: 5;
   }
 

@@ -89,17 +89,262 @@ nav_order: 7
 
 ---
 
-<!-- Section 2: Travel Map -->
+<!-- Section 2: Word Cloud - What People Think of Me -->
+## 💭 Impressions of Me
+
+<style>
+  .impression-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .input-section {
+    background: var(--global-bg-color);
+    border: 2px solid var(--global-divider-color);
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .input-section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: var(--global-theme-color);
+  }
+
+  .input-section p {
+    margin-bottom: 20px;
+    color: var(--global-text-color);
+    opacity: 0.8;
+  }
+
+  .input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  #impressionInput {
+    flex: 1;
+    padding: 12px 16px;
+    border: 2px solid var(--global-divider-color);
+    border-radius: 8px;
+    font-size: 16px;
+    background: var(--global-bg-color);
+    color: var(--global-text-color);
+    transition: border-color 0.3s;
+  }
+
+  #impressionInput:focus {
+    outline: none;
+    border-color: var(--global-theme-color);
+  }
+
+  #submitBtn {
+    padding: 12px 30px;
+    background: var(--global-theme-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  #submitBtn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
+  #submitBtn:active {
+    transform: translateY(0);
+  }
+
+  .word-count {
+    font-size: 14px;
+    color: var(--global-text-color);
+    opacity: 0.6;
+    text-align: right;
+  }
+
+  .cloud-section {
+    background: var(--global-bg-color);
+    border: 2px solid var(--global-divider-color);
+    border-radius: 12px;
+    padding: 40px;
+    min-height: 400px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .cloud-section h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: var(--global-theme-color);
+  }
+
+  #wordCloud {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    min-height: 300px;
+    padding: 20px;
+  }
+
+  .word-item {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 5px;
+    cursor: default;
+    transition: all 0.3s;
+    border-radius: 6px;
+    background: var(--global-code-bg-color);
+    color: var(--global-theme-color);
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .word-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  .empty-state {
+    text-align: center;
+    color: var(--global-text-color);
+    opacity: 0.5;
+    padding: 60px 20px;
+    font-size: 18px;
+  }
+
+  .stats-section {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background: var(--global-code-bg-color);
+    border-radius: 8px;
+    font-size: 14px;
+    color: var(--global-text-color);
+  }
+
+  .stats-section strong {
+    color: var(--global-theme-color);
+  }
+
+  .note {
+    margin-top: 20px;
+    padding: 15px;
+    background: var(--global-code-bg-color);
+    border-left: 4px solid var(--global-theme-color);
+    border-radius: 4px;
+    font-size: 14px;
+    color: var(--global-text-color);
+    opacity: 0.8;
+  }
+
+  @media (max-width: 768px) {
+    .input-group {
+      flex-direction: column;
+    }
+    
+    #submitBtn {
+      width: 100%;
+    }
+
+    .cloud-section {
+      padding: 20px;
+    }
+  }
+</style>
+
+<div class="impression-container">
+  <div class="input-section">
+    <h3>📝 What words or phrases come to mind when you think of me? Feel free to share your impression of me!</h3>
+    
+    <div class="input-group">
+      <input 
+        type="text" 
+        id="impressionInput" 
+        placeholder="Enter words or phrases (e.g., creative, innovative, helpful...)" 
+        maxlength="100"
+      />
+      <button id="submitBtn">Add</button>
+    </div>
+    
+    <div class="word-count">
+      <span id="charCount">0</span> / 100 characters
+    </div>
+
+    <div class="note">
+      💡 <strong>Tip:</strong> You can enter multiple words separated by commas, or submit one word at a time. The more a word is submitted, the larger it appears!
+    </div>
+  </div>
+
+  <div class="stats-section">
+    <strong id="totalWords">0</strong> unique words · <strong id="totalSubmissions">0</strong> total submissions
+  </div>
+
+  <div class="cloud-section">
+    <h3>☁️ Word Cloud</h3>
+    <div id="wordCloud">
+      <div class="empty-state">
+        Be the first to share your impression! 🌟
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+
+<script src="{{ '/assets/js/word-cloud.js' | relative_url }}"></script>
+
+---
+
+<!-- Section 3: Travel Map -->
 ## 🌍 Places I've Visited
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js"></script>
 
-<div id="map" style="height: 400px; width: 75%; margin-bottom: 20px;"></div>
+<style>
+  .map-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .map-wrapper {
+    background: var(--global-bg-color);
+    border: 2px solid var(--global-divider-color);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  #map {
+    height: 400px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+</style>
+
+<div class="map-container">
+  <div class="map-wrapper">
+    <div id="map"></div>
+  </div>
+</div>
 
 <script>
 // Initialize the map
-var map = L.map('map').setView([20, 5], 1.3);
+var map = L.map('map').setView([20, 5], 1.8);
 
 // Add OpenStreetMap tiles
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -211,210 +456,5 @@ legend.onAdd = function(map) {
 };
 legend.addTo(map);
 </script>
-
----
-
-<!-- Section 3: 30-Day Challenge Tracker -->
-## 🎯 Habits I'm Building
-
-<style>
-  .challenge-tracker {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  .challenge-header {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .challenge-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: var(--global-theme-color);
-    margin-bottom: 10px;
-  }
-  .challenge-progress {
-    font-size: 0.9rem;
-    color: var(--global-text-color);
-  }
-  .days-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
-    gap: 10px;
-    margin-bottom: 30px;
-  }
-  .day-box {
-    aspect-ratio: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--global-divider-color);
-    border-radius: 8px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    cursor: default;
-  }
-  .day-box.completed {
-    background-color: var(--global-theme-color);
-    color: white;
-    border-color: var(--global-theme-color);
-  }
-  .day-box.today {
-    border-color: var(--global-theme-color);
-    border-width: 3px;
-  }
-  .day-number {
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  .challenge-stats {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: var(--global-bg-color);
-    border-radius: 10px;
-    border: 1px solid var(--global-divider-color);
-  }
-  .stat-item {
-    text-align: center;
-  }
-  .stat-value {
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--global-theme-color);
-  }
-  .stat-label {
-    font-size: 0.9rem;
-    color: var(--global-text-color-light);
-    margin-top: 5px;
-  }
-</style>
-
-<div class="challenge-tracker">
-  <!-- Challenge Header -->
-  <div class="challenge-header">
-    <div class="challenge-title">📚 30-day Habit Challenge</div>
-    <div class="challenge-progress">2025-11 Getting up before 6:30 am</div>
-  </div>
-
-  <!-- Days Grid -->
-  <div class="days-grid">
-    <!-- Day 1-30 -->
-    <div class="day-box completed" title="Day 1 - Completed">
-      <div class="day-number">1</div>
-    </div>
-    <div class="day-box completed" title="Day 2 - Completed">
-      <div class="day-number">2</div>
-    </div>
-    <div class="day-box completed" title="Day 3 - Completed">
-      <div class="day-number">3</div>
-    </div>
-    <div class="day-box completed" title="Day 4 - Completed">
-      <div class="day-number">4</div>
-    </div>
-    <div class="day-box completed" title="Day 5 - Completed">
-      <div class="day-number">5</div>
-    </div>
-    <div class="day-box completed" title="Day 6 - Completed">
-      <div class="day-number">6</div>
-    </div>
-    <div class="day-box completed" title="Day 7 - Completed">
-      <div class="day-number">7</div>
-    </div>
-    <div class="day-box today" title="Day 8 - Completed">
-      <div class="day-number">8</div>
-    </div>
-    <div class="day-box" title="Day 9">
-      <div class="day-number">9</div>
-    </div>
-    <div class="day-box" title="Day 10">
-      <div class="day-number">10</div>
-    </div>
-    <div class="day-box" title="Day 11">
-      <div class="day-number">11</div>
-    </div>
-    <div class="day-box" title="Day 12">
-      <div class="day-number">12</div>
-    </div>
-    <div class="day-box" title="Day 13">
-      <div class="day-number">13</div>
-    </div>
-    <div class="day-box" title="Day 14">
-      <div class="day-number">14</div>
-    </div>
-    <div class="day-box" title="Day 15">
-      <div class="day-number">15</div>
-    </div>
-    <div class="day-box" title="Day 16">
-      <div class="day-number">16</div>
-    </div>
-    <div class="day-box" title="Day 17">
-      <div class="day-number">17</div>
-    </div>
-    <div class="day-box" title="Day 18">
-      <div class="day-number">18</div>
-    </div>
-    <div class="day-box" title="Day 19">
-      <div class="day-number">19</div>
-    </div>
-    <div class="day-box" title="Day 20">
-      <div class="day-number">20</div>
-    </div>
-    <div class="day-box" title="Day 21">
-      <div class="day-number">21</div>
-    </div>
-    <div class="day-box" title="Day 22">
-      <div class="day-number">22</div>
-    </div>
-    <div class="day-box" title="Day 23">
-      <div class="day-number">23</div>
-    </div>
-    <div class="day-box" title="Day 24">
-      <div class="day-number">24</div>
-    </div>
-    <div class="day-box" title="Day 25">
-      <div class="day-number">25</div>
-    </div>
-    <div class="day-box" title="Day 26">
-      <div class="day-number">26</div>
-    </div>
-    <div class="day-box" title="Day 27">
-      <div class="day-number">27</div>
-    </div>
-    <div class="day-box" title="Day 28">
-      <div class="day-number">28</div>
-    </div>
-    <div class="day-box" title="Day 29">
-      <div class="day-number">29</div>
-    </div>
-    <div class="day-box" title="Day 30">
-      <div class="day-number">30</div>
-    </div>
-  </div>
-
-  <!-- Stats -->
-  <div class="challenge-stats">
-    <div class="stat-item">
-      <div class="stat-value">5</div>
-      <div class="stat-label">Days Completed</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-value">25</div>
-      <div class="stat-label">Days Remaining</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-value">17%</div>
-      <div class="stat-label">Progress</div>
-    </div>
-  </div>
-</div>
-
-<div style="text-align: center; margin-top: 40px;">
-  <a href="{{ '/challenges/' | relative_url }}" class="btn btn-primary btn-lg">
-    📊 View All Challenges & Progress →
-  </a>
-</div>
 
 ---

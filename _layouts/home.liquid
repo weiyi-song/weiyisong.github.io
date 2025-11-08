@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+<style>
+  .home-hero {
+    width: 100%;
+    height: calc(100vh - 64px); /* leave room for header */
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* move content toward the left */
+    text-align: left;
+    color: #fff;
+  }
+
+  .home-hero .home-inner {
+    max-width: 54rem;
+    padding-left: 8%; /* adjust to reveal the face on the right */
+    padding-right: 2rem;
+  }
+
+  .home-hero .home-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.2rem;
+    letter-spacing: 0.2rem;
+    text-transform: none;
+    text-shadow: 0 2px 18px rgba(0,0,0,0.6);
+    margin: 0;
+    line-height: 1.05;
+  }
+
+  .home-hero .home-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.35rem;
+    margin-top: 0.6rem;
+    opacity: 0.95;
+    letter-spacing: 0.12rem;
+    text-transform: none;
+  }
+
+  @media (max-width: 768px) {
+    .home-hero { height: calc(100vh - 56px); }
+    .home-hero .home-inner { padding-left: 6%; }
+    .home-hero .home-name { font-size: 2.2rem; }
+    .home-hero .home-subtitle { font-size: 1rem; }
+  }
+</style>
+
+{%- assign bg = '/assets/img/background.JPEG' | relative_url -%}
+
+<div class="home-hero" style="background-image: url('{{ bg }}');">
+  <div class="home-inner">
+    <h1 class="home-name">
+      {% if site.title == 'blank' %}
+        <span>{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}</span>
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </h1>
+    <p class="home-subtitle">Singer, Actor</p>
+  </div>
+</div>

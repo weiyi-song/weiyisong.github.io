@@ -1,0 +1,199 @@
+Configuration file: /Users/weiyi/Documents/weiyisong.github.io/_config.yml
+            Source: /Users/weiyi/Documents/weiyisong.github.io
+       Destination: /Users/weiyi/Documents/weiyisong.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+DEPRECATION WARNING: `to_time` will always preserve the receiver timezone rather than system local time in Rails 8.1.To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from load at /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/bin/jekyll:25)
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/bibsearch.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/chartjs-setup.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/common.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/copy_code.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/diff2html-setup.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/distillpub/overrides.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/distillpub/template.v2.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/distillpub/transforms.v2.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/echarts-setup.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/highlight-search-term.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/jupyter_new_tab.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/leaflet-setup.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/masonry.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/mathjax-setup.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/mermaid-setup.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/newsletter.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/no_defer.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/plotly-setup.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/progress-bar.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/pseudocode-setup.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/search-setup.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/shortcut-key.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/theme.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/tooltips-setup.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/typograms.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/vega-setup.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/venobox-setup.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/wechat.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/word-cloud.js
+Terser: Minifying /Users/weiyi/Documents/weiyisong.github.io/assets/js/zoom.js
+       Imagemagick: Disabled in site.config
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+7 │   "variables",
+  │   ^^^^^^^^^^^
+  ╵
+    /Users/weiyi/Documents/weiyisong.github.io/assets/css/main.scss 7:3  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+8 │   "themes",
+  │   ^^^^^^^^
+  ╵
+    /Users/weiyi/Documents/weiyisong.github.io/assets/css/main.scss 8:3  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+9 │   "layout",
+  │   ^^^^^^^^
+  ╵
+    /Users/weiyi/Documents/weiyisong.github.io/assets/css/main.scss 9:3  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+10 │   "base",
+   │   ^^^^^^
+   ╵
+    /Users/weiyi/Documents/weiyisong.github.io/assets/css/main.scss 10:3  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+11 │   "distill",
+   │   ^^^^^^^^^
+   ╵
+    /Users/weiyi/Documents/weiyisong.github.io/assets/css/main.scss 11:3  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+9 │     #{$fa-icon-property}: unquote("\"#{ $icon }\"");
+  │                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    /Users/weiyi/Documents/weiyisong.github.io/_sass/font-awesome/_icons.scss 9:27  @import
+    font-awesome/fontawesome.scss 20:9                                              @import
+    /Users/weiyi/Documents/weiyisong.github.io/assets/css/main.scss 16:3            root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+10 │     #{$fa-duotone-icon-property}: unquote("\"#{$icon}#{$icon}\"");
+   │                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    /Users/weiyi/Documents/weiyisong.github.io/_sass/font-awesome/_icons.scss 10:35  @import
+    font-awesome/fontawesome.scss 20:9                                               @import
+    /Users/weiyi/Documents/weiyisong.github.io/assets/css/main.scss 16:3             root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+29 │   .#{$fa-css-prefix}-#{$name} { #{$fa-icon-property}: unquote("\"#{ $icon }\""); }
+   │                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    font-awesome/brands.scss 29:55                                        @import
+    /Users/weiyi/Documents/weiyisong.github.io/assets/css/main.scss 17:3  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+36 │   @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+   │           ^^^^^^^^^^^^^
+   ╵
+    tabler-icons/tabler-icons.scss 36:11                                  unicode()
+    tabler-icons/tabler-icons.scss 40:15                                  @import
+    /Users/weiyi/Documents/weiyisong.github.io/assets/css/main.scss 20:3  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.insert instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+36 │   @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+   │                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    tabler-icons/tabler-icons.scss 36:33                                  unicode()
+    tabler-icons/tabler-icons.scss 40:15                                  @import
+    /Users/weiyi/Documents/weiyisong.github.io/assets/css/main.scss 20:3  root stylesheet
+WARNING: 40 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
+[31m  Conversion error: JekyllJupyterNotebook::Converter encountered an error while converting 'assets/jupyter/blog.ipynb':[0m
+[31m                    No such file or directory - jupyter[0m
+[31m                    ------------------------------------------------[0m
+[31m      Jekyll 4.4.1   Please append `--trace` to the `serve` command [0m
+[31m                     for any additional information or backtrace. [0m
+[31m                    ------------------------------------------------[0m
+/Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-jupyter-notebook-0.0.6/lib/jekyll-jupyter-notebook/converter.rb:58:in `spawn': No such file or directory - jupyter (Errno::ENOENT)
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-jupyter-notebook-0.0.6/lib/jekyll-jupyter-notebook/converter.rb:58:in `block in convert_notebook'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-jupyter-notebook-0.0.6/lib/jekyll-jupyter-notebook/converter.rb:49:in `pipe'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-jupyter-notebook-0.0.6/lib/jekyll-jupyter-notebook/converter.rb:49:in `convert_notebook'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-jupyter-notebook-0.0.6/lib/jekyll-jupyter-notebook/converter.rb:28:in `convert'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:105:in `block in convert'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:104:in `each'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:104:in `reduce'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:104:in `convert'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:84:in `render_document'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:63:in `run'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:572:in `render_regenerated'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:564:in `block in render_pages'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:563:in `each'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:563:in `render_pages'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:211:in `render'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:80:in `process'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:28:in `process_site'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:65:in `build'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:36:in `process'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `block in process_with_graceful_fail'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `each'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `process_with_graceful_fail'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/commands/serve.rb:85:in `block (2 levels) in init_with_program'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `block in execute'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `each'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `execute'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/mercenary-0.4.0/lib/mercenary/program.rb:44:in `go'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/mercenary-0.4.0/lib/mercenary.rb:21:in `program'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/exe/jekyll:15:in `<top (required)>'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/bin/jekyll:25:in `load'
+	from /Users/weiyi/Documents/weiyisong.github.io/vendor/bundle/ruby/3.2.0/bin/jekyll:25:in `<top (required)>'
+	from /Users/weiyi/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.6.9/lib/bundler/cli/exec.rb:59:in `load'
+	from /Users/weiyi/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.6.9/lib/bundler/cli/exec.rb:59:in `kernel_load'
+	from /Users/weiyi/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.6.9/lib/bundler/cli/exec.rb:23:in `run'
+	from /Users/weiyi/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.6.9/lib/bundler/cli.rb:452:in `exec'
+	from /Users/weiyi/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.6.9/lib/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
+	from /Users/weiyi/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.6.9/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+	from /Users/weiyi/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.6.9/lib/bundler/vendor/thor/lib/thor.rb:538:in `dispatch'
+	from /Users/weiyi/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.6.9/lib/bundler/cli.rb:35:in `dispatch'
+	from /Users/weiyi/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.6.9/lib/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
+	from /Users/weiyi/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.6.9/lib/bundler/cli.rb:29:in `start'
+	from /Users/weiyi/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.6.9/exe/bundle:28:in `block in <top (required)>'
+	from /Users/weiyi/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.6.9/lib/bundler/friendly_errors.rb:117:in `with_friendly_errors'
+	from /Users/weiyi/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.6.9/exe/bundle:20:in `<top (required)>'
+	from /Users/weiyi/.rbenv/versions/3.2.2/bin/bundle:25:in `load'
+	from /Users/weiyi/.rbenv/versions/3.2.2/bin/bundle:25:in `<main>'

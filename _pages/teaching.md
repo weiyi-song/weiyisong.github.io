@@ -1,11 +1,9 @@
----
 layout: page
 permalink: /teaching/
 title: Teaching
 description: Teaching Assistant for graduate-level courses at Carnegie Mellon University.
-nav: true
+nav: false
 nav_order: 6
----
 
 ## Current Semester (Fall 2025)
 

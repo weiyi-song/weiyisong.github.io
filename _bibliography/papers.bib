@@ -13,6 +13,7 @@
   doi={10.48550/arXiv.2509.12179},
   html={https://openreview.net/forum?id=G5jK2OMT2q#discussion},
   pdf={co_alignment.pdf},
+  preview={a4s.png},
   abstract={Current AI alignment through RLHF follows a single directional paradigm that AI conforms to human preferences while treating human cognition as fixed. We propose a shift to co-alignment through Bidirectional Cognitive Alignment (BiCA), where humans and AI mutually adapt. BiCA uses learnable protocols, representation mapping, and KL-budget constraints for controlled co-evolution. In collaborative navigation, BiCA achieved 85.5% success versus 70.3% baseline, with 230% better mutual adaptation and 332% better protocol convergence.}
 }
 
@@ -24,6 +25,7 @@
   year={2025},
   url={https://arxiv.org/abs/2510.02712},
   doi={10.48550/arXiv.2510.02712},
+  pdf={time_to.pdf},
   abstract={Large Language Models (LLMs) have revolutionized conversational AI, yet their robustness in extended multi-turn dialogues remains poorly understood. Existing evaluation frameworks focus on static benchmarks and single-turn assessments, failing to capture the temporal dynamics of conversational degradation that characterize real-world interactions. In this work, we present the first comprehensive survival analysis of conversational AI robustness, analyzing 36,951 conversation turns across 9 state-of-the-art LLMs to model failure as a time-to-event process.}
 }
 
@@ -35,6 +37,7 @@
   year={2025},
   url={https://arxiv.org/abs/2510.09895},
   doi={10.48550/arXiv.2510.09895},
+  preview={coi.png},
   abstract={Modeling clinical time-series data is hampered by the challenge of capturing latent, time-varying dependencies among features. State-of-the-art approaches often rely on black-box mechanisms or simple aggregation, failing to explicitly model how the influence of one clinical variable propagates through others over time. We propose Chain-of-Influence (CoI), an interpretable deep learning framework that constructs an explicit, time-unfolded graph of feature interactions.}
 }
 
@@ -46,6 +49,7 @@
   year={2025},
   selected={true},
   url={https://arxiv.org/abs/2503.19285},
+  preview={no_black.png},
   abstract={Despite the outstanding performance of deep learning models in clinical prediction tasks, explainability remains a significant challenge. Inspired by transformer architectures, we introduce the Temporal-Feature Cross Attention Mechanism (TFCAM), a novel deep learning framework designed to capture dynamic interactions among clinical features across time, enhancing both predictive accuracy and interpretability. In an experiment with 1,422 patients with Chronic Kidney Disease, predicting progression to End-Stage Renal Disease, TFCAM outperformed LSTM and RETAIN baselines, achieving an AUROC of 0.95 and an F1-score of 0.69. Beyond performance gains, TFCAM provides multi-level explainability by identifying critical temporal periods, ranking feature importance, and quantifying how features influence each other across time before affecting predictions. Our approach addresses the "black box" limitations of deep learning in healthcare, offering clinicians transparent insights into disease progression mechanisms while maintaining state-of-the-art predictive performance.}
 }
 
@@ -58,6 +62,26 @@
   month={Aug},
   doi={10.1093/jamia/ocaf118},
   url={https://pubmed.ncbi.nlm.nih.gov/40795063/},
+  preview={jamia.png},
+  abstract={Objective: To improve prediction of Chronic Kidney Disease progression to End Stage Renal Disease using machine
+    learning and deep learning models applied to integrated clinical and claims data with varying observation windows,
+    supported by explainable AI to enhance interpretability and reduce bias.
+    Materials and Methods: We utilized data from 10,326 CKD patients, combining clinical and claims information
+    from 2009-2018. After preprocessing, cohort identification, and feature engineering, we evaluated multiple statistical,
+    ML and DL models using five distinct observation windows. Feature importance and SHAP analysis were employed
+    to understand key predictors. Models were tested for robustness, clinical relevance, misclassification patterns, and
+    bias.
+    Results: Integrated data models outperformed single data source models, with Long Short-Term Memory (LSTM)
+    achieving the highest AUC (0.93) and F1 score (0.65). A 24-month observation window optimally balanced early
+    detection and prediction accuracy. The 2021 eGFR equation improved prediction accuracy and reduced racial bias,
+    particularly for African American patients.
+    Discussion: Improved prediction accuracy, interpretability and bias mitigation strategies have the potential to enhance
+    CKD management, support targeted interventions, and reduce healthcare disparities.
+    Conclusion: This study presents a robust framework for predicting ESRD outcomes, improving clinical decision-
+    making through integrated multi-sourced data and advanced analytics. Future research will expand data integration
+    and extend this framework to other chronic diseases.},
+  pdf={jamia.pdf},
+  selected={true},
   note={Online ahead of print}
 }
 
@@ -72,9 +96,9 @@
   pages={664--673},
   pmid={40417492},
   pmcid={PMC12099416},
-  doi={}
-  url={https://pmc.ncbi.nlm.nih.gov/articles/PMC12099416/},
+  html={https://pmc.ncbi.nlm.nih.gov/articles/PMC12099416/},
   pdf={towards.pdf},
+  preview={towards.png},
   abstract={This study explores the potential of utilizing administrative claims data, combined with advanced machine learning and deep learning techniques, to predict the progression of Chronic Kidney Disease (CKD) to End-Stage Renal Disease (ESRD). We analyze a comprehensive, 10-year dataset provided by a major health insurance organization to develop prediction models for multiple observation windows using traditional machine learning methods such as Random Forest and XGBoost as well as deep learning approaches such as Long Short-Term Memory (LSTM) networks.}
 }
 

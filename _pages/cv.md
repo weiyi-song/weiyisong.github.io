@@ -2,8 +2,8 @@
 layout: cv
 permalink: /cv/
 title: Resume
-nav: true
-nav_order: 5
+nav: false
+nav_order: 999
 cv_pdf: Resume_Yubo_2026.pdf # you can also use external links here
 description: 
 toc:

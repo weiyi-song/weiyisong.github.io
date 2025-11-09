@@ -1,69 +1,94 @@
 ---
-layout: default
+layout: none
 ---
 
-<style>
-  .home-hero {
-    width: 100%;
-    height: calc(100vh - 64px); /* leave room for header */
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* move content toward the left */
-    text-align: left;
-    color: #fff;
-  }
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+  {% include head.liquid %}
+  <body class="fixed-top-nav">
+    {% include header.liquid %}
+    
+    <style>
+      /* Full-width hero - break out of container */
+      .home-hero {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: left;
+        color: #fff;
+      }
 
-  .home-hero .home-inner {
-    max-width: 54rem;
-    padding-left: 8%; /* adjust to reveal the face on the right */
-    padding-right: 2rem;
-  }
+      /* Hide footer */
+      footer {
+        display: none !important;
+      }
 
-  .home-hero .home-name {
-    font-family: 'Cinzel', serif;
-    font-size: 5rem;
-    font-weight: 400;
-    letter-spacing: 0.35rem;
-    text-transform: none;
-    text-shadow: 0 3px 25px rgba(0,0,0,0.7), 0 1px 8px rgba(0,0,0,0.4);
-    margin: 0;
-    line-height: 1.15;
-    color: #faf5f0;
-  }
+      body {
+        overflow: hidden;
+      }
 
-  .home-hero .home-subtitle {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.6rem;
-    font-weight: 300;
-    font-style: italic;
-    margin-top: 0.8rem;
-    opacity: 0.92;
-    letter-spacing: 0.15rem;
-    text-transform: none;
-    color: #f5ebe0;
-  }
+      .home-hero .home-inner {
+        max-width: 54rem;
+        padding-left: 8%;
+        padding-right: 2rem;
+      }
 
-  @media (max-width: 768px) {
-    .home-hero { height: calc(100vh - 56px); }
-    .home-hero .home-inner { padding-left: 6%; }
-    .home-hero .home-name { font-size: 2.2rem; }
-    .home-hero .home-subtitle { font-size: 1rem; }
-  }
-</style>
+      .home-hero .home-name {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 5rem;
+        font-weight: 300;
+        font-style: italic;
+        letter-spacing: 0.15rem;
+        text-transform: none;
+        text-shadow: 0 3px 25px rgba(0,0,0,0.7), 0 1px 8px rgba(0,0,0,0.4);
+        margin: 0;
+        line-height: 1.15;
+        color: #f5ebe0;
+      }
 
-{%- assign bg = '/assets/img/background.JPEG' | relative_url -%}
+      .home-hero .home-subtitle {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.6rem;
+        font-weight: 300;
+        font-style: italic;
+        margin-top: 0.8rem;
+        opacity: 0.92;
+        letter-spacing: 0.15rem;
+        text-transform: none;
+        color: #f5ebe0;
+      }
 
-<div class="home-hero" style="background-image: url('{{ bg }}');">
-  <div class="home-inner">
-    <h1 class="home-name">
-      {% if site.title == 'blank' %}
-        <span>{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}</span>
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="home-subtitle">Singer, Actor</p>
-  </div>
-</div>
+      @media (max-width: 768px) {
+        .home-hero { height: calc(100vh - 56px); }
+        .home-hero .home-inner { padding-left: 6%; }
+        .home-hero .home-name { font-size: 2.2rem; }
+        .home-hero .home-subtitle { font-size: 1rem; }
+      }
+    </style>
+
+    {%- assign bg = '/assets/img/background.JPEG' | relative_url -%}
+
+    <div class="home-hero" style="background-image: url('{{ bg }}');">
+      <div class="home-inner">
+        <h1 class="home-name">
+          {% if site.title == 'blank' %}
+            <span>{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}</span>
+          {% else %}
+            {{ site.title }}
+          {% endif %}
+        </h1>
+        <p class="home-subtitle">Singer, Actor</p>
+      </div>
+    </div>
+
+  </body>
+</html>
